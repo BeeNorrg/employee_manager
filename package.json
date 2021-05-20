@@ -1,0 +1,23 @@
+{
+  "name": "employee_manager",
+  "version": "1.0.0",
+  "description": "a content management system built using node.js, inquirer, and mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeeNorrg/employee_manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeeNorrg/employee_manager/issues"
+  },
+  "homepage": "https://github.com/BeeNorrg/employee_manager#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
