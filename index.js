@@ -31,17 +31,15 @@ const prompt = () => {
         ]
     }).then((answer) => {
         switch(answer.choice){
-            case 'Add Employee':
-
+            case 'Add Employee':    
                 break;
             case 'Add Role':
-                
                 break;
             case 'Add Department':
                 break;
             case 'View Employees':
                 break;
-            case 'View Rolse':
+            case 'View Roles':
                 break;
             case 'View Departments':
                 break;
