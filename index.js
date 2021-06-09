@@ -7,16 +7,16 @@ const connection = require('./server');
 connection.connect((err) => {
     if (err) throw err;
     console.log('Loading Employee Management System...');
-    //artificial loading time
-    function dramaticPause(){
-        setTimeout( () => {runInquiry()}, 500);
-    }
-    prompt();
+    prompts();
 })
+//artificial loading time
+function loadTime(){
+    setTimeout( () => {prompt()}, 500);
+};
 
-const prompt = () => {
+const prompts = () => {
     inquirer.prompt({
-        name: 'Employee Manager v1.0.0',
+        name: 'menu',
         type: 'list',
         message: 'What would you like to do?',
         choices: [
@@ -29,17 +29,25 @@ const prompt = () => {
             'Edit Employees',
             'Exit'
         ]
-    }).then((answer) => {
-        switch(answer.choice){
+    }).then((res) => {
+        switch(res.menu){
             case 'View Employees':
+                review.empRev();
+                loadTime();
                 break;
             case 'View Roles':
+                review.roleRev();
+                loadTime();
                 break;
             case 'View Departments':
+                review.depRev();
+                loadTime();
                 break;
             case 'Add Department':
+                add.addDep();
                 break;
             case 'Add Role':
+                add.addRole();
                 break;
             case 'Add Employee':  
                 add.addEmp();  
@@ -52,6 +60,8 @@ const prompt = () => {
         }
     })
 }
+
+module.exports = {prompts};
 
 
 

@@ -4,6 +4,7 @@ const connection = require("../server");
 //const sql = require('mysql');
 
 const addEmp = () => {
+    console.log("something happened!");
     const empSelect = 'SELECT id, title FROM role';
     const  mngSelect = 'SELECT id, first_name, last_name FROM employee WHERE manager_id != role_id';
     var empChoice = [];
@@ -58,7 +59,7 @@ const empInquire = (empChoice, mngChoice) => {
             {
                 first_name: res.first_name,
                 last_name: res.last_name,
-                role_id: res.job,
+                job_id: res.job,
                 manager_id: res.manager
             },
             function (err, res) {
@@ -68,7 +69,7 @@ const empInquire = (empChoice, mngChoice) => {
                     resolve('Success!');
                 });
                 newEmp.then(() => {
-                    index.prompt();
+                    index.prompts();
                 });
             }
         );
@@ -98,7 +99,7 @@ const addDep = () => {
                         resolve('Success!');
                     });
                     newDep.then(() => {
-                        index.prompt();
+                        index.prompts();
                     });
                 }
             )
@@ -157,7 +158,7 @@ const roleInquire = (depChoices) => {
                     resolve('Success!');
                 });
                 newRole.then(() => {
-                    app.init();
+                    index.prompts();
                 });
             }
         )

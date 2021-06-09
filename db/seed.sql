@@ -19,19 +19,19 @@ INSERT INTO department (id, name) VALUES (2, "Legal");
 INSERT INTO department (id, name) VALUES (3, "Financing");
 INSERT INTO department (id, name) VALUES (4, "Engineering");
 --example employees
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (1, "John", "117", 1, NULL);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (2, "Kelly", "087", 2, 1);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (3, "Samuel", "034", 3, NULL);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (4, "Fred", "104", 4, 3);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (5, "Holly", "Tanaka", 5, NULL);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (6, "Olympia", "Vale", 6, NULL);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (7, "Edward", "Buck", 7, 6);
-INSERT INTO employees (id, first_name, last_name, job_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, job_id, manager_id)
 VALUES (8, "Avery", "Johnson", 7, 6); 
