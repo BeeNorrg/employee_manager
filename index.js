@@ -9,7 +9,7 @@ connection.connect((err) => {
     console.log('Loading Employee Management System...');
     //artificial loading time
     function dramaticPause(){
-        setTimeout( () => {runInquiry()}, 300);
+        setTimeout( () => {runInquiry()}, 500);
     }
     prompt();
 })
@@ -20,28 +20,29 @@ const prompt = () => {
         type: 'list',
         message: 'What would you like to do?',
         choices: [
-            'Add Employee',
-            'Add Role',
-            'Add Department',
             'View Employees',
             'View Roles',
             'View Departments',
+            'Add Role',
+            'Add Department',
+            'Add Employee',
             'Edit Employees',
             'Exit'
         ]
     }).then((answer) => {
         switch(answer.choice){
-            case 'Add Employee':    
-                break;
-            case 'Add Role':
-                break;
-            case 'Add Department':
-                break;
             case 'View Employees':
                 break;
             case 'View Roles':
                 break;
             case 'View Departments':
+                break;
+            case 'Add Department':
+                break;
+            case 'Add Role':
+                break;
+            case 'Add Employee':  
+                add.addEmp();  
                 break;
             case 'Edit Employees':
                 break;
