@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const add = require('./assets/add');
-const remove = require('./assets/remove');
+const remove = require('./assets/update');
 const review = require('./assets/review');
 const connection = require('./server');
 
